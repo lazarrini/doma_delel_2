@@ -48,7 +48,7 @@ with sq.connect("hotels.db") as con:
     cur.execute("""
                 CREATE TABLE IF NOT EXISTS Hotels (
                     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-                    name TEXT NOT NULL,
+                    name CHAR NOT NULL,
                     description TEXT NOT NULL,
                     stars INTEGER,
                     minimal_price REAL
